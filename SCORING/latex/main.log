@@ -1,0 +1,1980 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2023.11.2)  24 JUL 2024 03:12
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24> (./easychair.cls
+easychair class style, by Serguei A. Mokhov and Andrei Voronkov <10 December 20
+15>
+CVS Revision: $Id: easychair.cls,v 3.4 2017/03/26 09:52 voronkov Exp $
+Designed for easyChair.org, under guidelines and suggestions of
+             Andrei Voronkov <www.voronkov.com>, and
+             Geoff Sutcliffe <www.cs.miami.edu/^geoff>
+Copyright terms are that of easychair.org
+For bug reports, please contact <andrei@voronkov.com>
+Document Class: easychair 2017/03/26 v3.5
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+)
+\c@@inst=\count185
+\c@@auth=\count186
+\c@auco=\count187
+\instindent=\dimen138
+\@LMarginSize=\skip47
+\@RMarginSize=\skip48
+\@TMarginSize=\skip49
+\@BMarginSize=\skip50
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
+\abovecaptionskip=\skip51
+\belowcaptionskip=\skip52
+\bibindent=\dimen139
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2022/03/08 v6.0d a miscellany of footnote facilities
+\FN@temptoken=\toks16
+\footnotemargin=\dimen140
+\@outputbox@depth=\dimen141
+Package footmisc Info: Declaring symbol style bringhurst on input line 695.
+Package footmisc Info: Declaring symbol style chicago on input line 703.
+Package footmisc Info: Declaring symbol style wiley on input line 712.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 723.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 743.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 764
+.
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen142
+\Hy@linkcounter=\count196
+\Hy@pagecounter=\count197
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count198
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `linktocpage' set `true' on input line 4018.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4018.
+Package hyperref Info: Hyper figures OFF on input line 4137.
+Package hyperref Info: Link nesting OFF on input line 4142.
+Package hyperref Info: Hyper index ON on input line 4145.
+Package hyperref Info: Plain pages OFF on input line 4152.
+Package hyperref Info: Backreferencing OFF on input line 4157.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4390.
+\c@Hy@tempcnt=\count199
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4749.
+\XeTeXLinkMargin=\dimen143
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count266
+\Field@Width=\dimen144
+\Fld@charsize=\dimen145
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring ON on input line 6045.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+LaTeX Info: Redefining \ref on input line 6097.
+LaTeX Info: Redefining \pageref on input line 6101.
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count267
+\c@Item=\count268
+\c@Hfootnote=\count269
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2022-02-21 v7.00n Hyperref driver for pdfTeX
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count270
+\c@bookmark@seq@number=\count271
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip53
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen146
+\Gin@req@width=\dimen147
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count272
+\lst@gtempboxa=\box50
+\lst@token=\toks18
+\lst@length=\count273
+\lst@currlwidth=\dimen148
+\lst@column=\count274
+\lst@pos=\count275
+\lst@lostspace=\dimen149
+\lst@width=\dimen150
+\lst@newlines=\count276
+\lst@lineno=\count277
+\lst@maxwidth=\dimen151
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count278
+\lst@skipnumbers=\count279
+\lst@framebox=\box51
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks19
+\thm@bodyfont=\toks20
+\thm@headfont=\toks21
+\thm@notefont=\toks22
+\thm@headpunct=\toks23
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
+\dth@everypar=\toks24
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/mathtools/empheq.sty
+Package: empheq 2017/03/31 v2.15 Emphasizing equations
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2022/02/07 v1.28a mathematical typesetting tools
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count280
+\calc@Bcount=\count281
+\calc@Adimen=\dimen152
+\calc@Bdimen=\dimen153
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count282
+\calc@Cskip=\skip59
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip60
+
+For additional information on amsmath, use the `?' option.
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks25
+\ex@=\dimen154
+))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen155
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count283
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count284
+\leftroot@=\count285
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count286
+\DOTSCASE@=\count287
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+\big@size=\dimen156
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count288
+\c@MaxMatrixCols=\count289
+\dotsspace@=\muskip17
+\c@parentequation=\count290
+\dspbrk@lvl=\count291
+\tag@help=\toks26
+\row@=\count292
+\column@=\count293
+\maxfields@=\count294
+\andhelp@=\toks27
+\eqnshift@=\dimen157
+\alignsep@=\dimen158
+\tagshift@=\dimen159
+\tagwidth@=\dimen160
+\totwidth@=\dimen161
+\lineht@=\dimen162
+\@envbody=\toks28
+\multlinegap=\skip61
+\multlinetaggap=\skip62
+\mathdisplay@stack=\toks29
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+)
+\g_MT_multlinerow_int=\count295
+\l_MT_multwidth_dim=\dimen163
+\origjot=\skip63
+\l_MT_shortvdotswithinadjustabove_dim=\dimen164
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen165
+\l_MT_above_intertext_sep=\dimen166
+\l_MT_below_intertext_sep=\dimen167
+\l_MT_above_shortintertext_sep=\dimen168
+\l_MT_below_shortintertext_sep=\dimen169
+\xmathstrut@box=\box54
+\xmathstrut@dim=\dimen170
+)
+\l_EQ_equationtype_int=\count296
+\l_EQ_alignmentmode_int=\count297
+\l_EQ_totalwidth_dim=\dimen171
+\l_EQ_displaywidth_dim=\dimen172
+\l_EQ_temp_linewidth_dim=\dimen173
+\l_EQ_linewidth_dim=\dimen174
+\EmphEqdelimitershortfall=\dimen175
+\EmphEqdelimiterfactor=\count298
+\g_EQ_toptag_height_dim=\dimen176
+\g_EQ_bottomtag_depth_dim=\dimen177
+\g_EQ_toprow_height_dim=\dimen178
+\g_EQ_bottomrow_depth_dim=\dimen179
+\g_EQ_widesttag_dim=\dimen180
+\EQ_mathdisplay_box=\box55
+\EQ_tag_box=\box56
+\g_EQ_temprow_int=\count299
+)
+\@MarginSize=\skip64
+
+easychair: Selecting letter paper margin sizes.
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count300
+\Gm@cntv=\count301
+\c@Gm@tempcnt=\count302
+\Gm@bindingoffset=\dimen181
+\Gm@wd@mp=\dimen182
+\Gm@odd@mp=\dimen183
+\Gm@even@mp=\dimen184
+\Gm@layoutwidth=\dimen185
+\Gm@layoutheight=\dimen186
+\Gm@layouthoffset=\dimen187
+\Gm@layoutvoffset=\dimen188
+\Gm@dimlist=\toks30
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2021/09/03 v1.2n Refers to last page's name (HMM; JPG)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip65
+\f@nch@O@elh=\skip66
+\f@nch@O@erh=\skip67
+\f@nch@O@olh=\skip68
+\f@nch@O@orh=\skip69
+\f@nch@O@elf=\skip70
+\f@nch@O@erf=\skip71
+\f@nch@O@olf=\skip72
+\f@nch@O@orf=\skip73
+))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/base/doc.sty
+Package: doc 2021/10/04 v2.1n Standard LaTeX documentation package (FMi)
+\c@StandardModuleDepth=\count303
+\guard@level=\count304
+\MacrocodeTopsep=\skip74
+\MacroIndent=\dimen189
+\macro@cnt=\count305
+\MacroTopsep=\skip75
+\index@excludelist=\toks31
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count306
+\mult@box=\box57
+\multicol@leftmargin=\dimen190
+\c@unbalance=\count307
+\c@collectmore=\count308
+\doublecol@number=\count309
+\multicoltolerance=\count310
+\multicolpretolerance=\count311
+\full@width=\dimen191
+\page@free=\dimen192
+\premulticols=\dimen193
+\postmulticols=\dimen194
+\multicolsep=\skip76
+\multicolbaselineskip=\skip77
+\partial@page=\box58
+\last@line=\box59
+\maxbalancingoverflow=\dimen195
+\mult@rightbox=\box60
+\mult@grightbox=\box61
+\mult@firstbox=\box62
+\mult@gfirstbox=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\c@minrows=\count312
+\c@columnbadness=\count313
+\c@finalcolumnbadness=\count314
+\last@try=\dimen196
+\multicolovershoot=\dimen197
+\multicolundershoot=\dimen198
+\mult@nat@firstbox=\box100
+\colbreak@box=\box101
+\mc@col@check@num=\count315
+)
+\IndexMin=\dimen199
+\c@IndexColumns=\count316
+\GlossaryMin=\dimen256
+\c@GlossaryColumns=\count317
+\check@sum=\count318
+\bslash@cnt=\count319
+\wrong@table=\toks32
+\c@CodelineNo=\count320
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen257
+\lightrulewidth=\dimen258
+\cmidrulewidth=\dimen259
+\belowrulesep=\dimen260
+\belowbottomsep=\dimen261
+\aboverulesep=\dimen262
+\abovetopsep=\dimen263
+\cmidrulesep=\dimen264
+\cmidrulekern=\dimen265
+\defaultaddspace=\dimen266
+\@cmidla=\count321
+\@cmidlb=\count322
+\@aboverulesep=\dimen267
+\@belowrulesep=\dimen268
+\@thisruleclass=\count323
+\@lastruleclass=\count324
+\@thisrulewidth=\dimen269
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip78
+\LTright=\skip79
+\LTpre=\skip80
+\LTpost=\skip81
+\LTchunksize=\count325
+\LTcapwidth=\dimen270
+\LT@head=\box102
+\LT@firsthead=\box103
+\LT@foot=\box104
+\LT@lastfoot=\box105
+\LT@gbox=\box106
+\LT@cols=\count326
+\LT@rows=\count327
+\c@LT@tables=\count328
+\c@LT@chunks=\count329
+\LT@p@ftn=\toks33
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/pgfplots/pgfplotstable.sty
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplotstable 2021/05/15 v1.18.1 Table typesetting and Pretty-printing
+ (1.18.1)
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks34
+\pgfutil@tempdima=\dimen271
+\pgfutil@tempdimb=\dimen272
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box107
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks35
+\pgfkeys@temptoks=\toks36
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks37
+))
+\pgf@x=\dimen273
+\pgf@y=\dimen274
+\pgf@xa=\dimen275
+\pgf@ya=\dimen276
+\pgf@xb=\dimen277
+\pgf@yb=\dimen278
+\pgf@xc=\dimen279
+\pgf@yc=\dimen280
+\pgf@xd=\dimen281
+\pgf@yd=\dimen282
+\w@pgf@writea=\write4
+\r@pgf@reada=\read2
+\c@pgf@counta=\count330
+\c@pgf@countb=\count331
+\c@pgf@countc=\count332
+\c@pgf@countd=\count333
+\t@pgf@toka=\toks38
+\t@pgf@tokb=\toks39
+\t@pgf@tokc=\toks40
+\pgf@sys@id@count=\count334
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count335
+\pgfsyssoftpath@bigbuffer@items=\count336
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen283
+\pgfmath@count=\count337
+\pgfmath@box=\box108
+\pgfmath@toks=\toks41
+\pgfmath@stack@operand=\toks42
+\pgfmath@stack@operation=\toks43
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count338
+))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen284
+\pgf@picmaxx=\dimen285
+\pgf@picminy=\dimen286
+\pgf@picmaxy=\dimen287
+\pgf@pathminx=\dimen288
+\pgf@pathmaxx=\dimen289
+\pgf@pathminy=\dimen290
+\pgf@pathmaxy=\dimen291
+\pgf@xx=\dimen292
+\pgf@xy=\dimen293
+\pgf@yx=\dimen294
+\pgf@yy=\dimen295
+\pgf@zx=\dimen296
+\pgf@zy=\dimen297
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen298
+\pgf@path@lasty=\dimen299
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen300
+\pgf@shorten@start@additional=\dimen301
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box109
+\pgf@hbox=\box110
+\pgf@layerbox@main=\box111
+\pgf@picture@serial@count=\count339
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen302
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen303
+\pgf@pt@y=\dimen304
+\pgf@pt@temp=\dimen305
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen306
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen307
+\pgf@sys@shading@range@num=\count340
+\pgf@shadingcount=\count341
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box112
+))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.
+tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box113
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen308
+\pgf@nodesepend=\dimen309
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen310
+\pgffor@skip=\dimen311
+\pgffor@stack=\toks44
+\pgffor@toks=\toks45
+))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count342
+\pgfplotmarksize=\dimen312
+)
+\tikz@lastx=\dimen313
+\tikz@lasty=\dimen314
+\tikz@lastxsaved=\dimen315
+\tikz@lastysaved=\dimen316
+\tikz@lastmovetox=\dimen317
+\tikz@lastmovetoy=\dimen318
+\tikzleveldistance=\dimen319
+\tikzsiblingdistance=\dimen320
+\tikz@figbox=\box114
+\tikz@figbox@bg=\box115
+\tikz@tempbox=\box116
+\tikz@tempbox@bg=\box117
+\tikztreelevel=\count343
+\tikznumberofchildren=\count344
+\tikznumberofcurrentchild=\count345
+\tikz@fig@count=\count346
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count347
+\pgfmatrixcurrentcolumn=\count348
+\pgf@matrix@numberofcolumns=\count349
+)
+\tikz@expandcount=\count350
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks46
+\t@pgfplots@tokb=\toks47
+\t@pgfplots@tokc=\toks48
+\pgfplots@tmpa=\dimen321
+\c@pgfplots@coordindex=\count351
+\c@pgfplots@scanlineindex=\count352
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
+.code.tex))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.c
+ode.tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_loader.code.tex
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
+e.tex))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code
+.tex
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructure.code.tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructureext.code.tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+array.code.tex
+\c@pgfplotsarray@tmp=\count353
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+matrix.code.tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
+shared.code.tex
+\c@pgfplotstable@counta=\count354
+\t@pgfplotstable@a=\toks49
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+deque.code.tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.co
+de.tex
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.da
+ta.code.tex))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb
+.code.tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
+s.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count355
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
+.surfshading.pgfsys-pdftex.def)))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.
+code.tex
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.cod
+e.tex))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.c
+ode.tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.c
+ode.tex
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandle
+r.code.tex
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.
+code.tex)))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.
+tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessin
+g.code.tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.cod
+e.tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.
+tex)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.te
+x)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.code.tex
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
+s.code.tex
+\pgfdecoratedcompleteddistance=\dimen322
+\pgfdecoratedremainingdistance=\dimen323
+\pgfdecoratedinputsegmentcompleteddistance=\dimen324
+\pgfdecoratedinputsegmentremainingdistance=\dimen325
+\pgf@decorate@distancetomove=\dimen326
+\pgf@decorate@repeatstate=\count356
+\pgfdecorationsegmentamplitude=\dimen327
+\pgfdecorationsegmentlength=\dimen328
+)
+\tikz@lib@dec@box=\box118
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathmorphing.code.tex
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathmorphing.code.tex))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathreplacing.code.tex
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathreplacing.code.tex))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
+ts.contourlua.code.tex)
+\pgfplots@numplots=\count357
+\pgfplots@xmin@reg=\dimen329
+\pgfplots@xmax@reg=\dimen330
+\pgfplots@ymin@reg=\dimen331
+\pgfplots@ymax@reg=\dimen332
+\pgfplots@zmin@reg=\dimen333
+\pgfplots@zmax@reg=\dimen334
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmar
+ks.code.tex
+File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
+.code.tex
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
+.coltype.code.tex))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen335
+\ar@mcellbox=\box119
+\extrarowheight=\dimen336
+\NC@list=\toks50
+\extratabsurround=\skip82
+\backup@length=\skip83
+\ar@cellbox=\box120
+))
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box121
+\beforetitleunit=\skip84
+\aftertitleunit=\skip85
+\ttl@plus=\dimen337
+\ttl@minus=\dimen338
+\ttl@toksa=\toks51
+\titlewidth=\dimen339
+\titlewidthlast=\dimen340
+\titlewidthfirst=\dimen341
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip86
+\multirow@cntb=\count358
+\multirow@dima=\skip87
+\bigstrutjot=\dimen342
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen343
+\captionmargin=\dimen344
+\caption@leftmargin=\dimen345
+\caption@rightmargin=\dimen346
+\caption@width=\dimen347
+\caption@indent=\dimen348
+\caption@parindent=\dimen349
+\caption@hangindent=\dimen350
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count359
+\c@continuedfloat=\count360
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+))
+\c@subfigure=\count361
+\c@subtable=\count362
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
+\FV@CodeLineNo=\count363
+\FV@InFile=\read3
+\FV@TabBox=\box122
+\c@FancyVerbLine=\count364
+\FV@StepNumber=\count365
+\FV@OutFile=\write5
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line 2370.
+LaTeX Info: Redefining \cref on input line 2370.
+LaTeX Info: Redefining \Cref on input line 2370.
+LaTeX Info: Redefining \crefrange on input line 2370.
+LaTeX Info: Redefining \Crefrange on input line 2370.
+LaTeX Info: Redefining \cpageref on input line 2370.
+LaTeX Info: Redefining \Cpageref on input line 2370.
+LaTeX Info: Redefining \cpagerefrange on input line 2370.
+LaTeX Info: Redefining \Cpagerefrange on input line 2370.
+LaTeX Info: Redefining \labelcref on input line 2370.
+LaTeX Info: Redefining \labelcpageref on input line 2370.
+Package cleveref Info: `amsthm' support loaded on input line 3026.
+Package cleveref Info: `listings' support loaded on input line 3131.
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count366
+\l__pdf_internal_box=\box123
+)
+(./main.aux
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}' multiply defined.
+
+
+LaTeX Warning: Label `tab:cat_{cat}@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic' multiply defined.
+
+
+LaTeX Warning: Label `fig:quantPic@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:all_results' multiply defined.
+
+
+LaTeX Warning: Label `tab:all_results@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:all_results' multiply defined.
+
+
+LaTeX Warning: Label `tab:all_results@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:all_results' multiply defined.
+
+
+LaTeX Warning: Label `tab:all_results@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:all_results' multiply defined.
+
+
+LaTeX Warning: Label `tab:all_results@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:all_results' multiply defined.
+
+
+LaTeX Warning: Label `tab:all_results@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:all_results' multiply defined.
+
+
+LaTeX Warning: Label `tab:all_results@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:all_results' multiply defined.
+
+
+LaTeX Warning: Label `tab:all_results@cref' multiply defined.
+
+)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count367
+\scratchdimen=\dimen351
+\scratchbox=\box124
+\nofMPsegments=\count368
+\nofMParguments=\count369
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count370
+\MPscratchDim=\dimen352
+\MPnumerator=\count371
+\makeMPintoPDFobject=\count372
+\everyMPtoPDFconversion=\toks53
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package hyperref Info: Link coloring ON on input line 144.
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count373
+)
+LaTeX Info: Redefining \ref on input line 144.
+LaTeX Info: Redefining \pageref on input line 144.
+LaTeX Info: Redefining \nameref on input line 144.
+ (./main.out) (./main.out)
+\@outlinefile=\write6
+\openout6 = `main.out'.
+
+\c@lstlisting=\count374
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* hratio: 1:1
+* vratio: 1:1
+* modes: includehead includefoot twoside 
+* h-part:(L,W,R)=(100.86502pt, 412.56496pt, 100.86502pt)
+* v-part:(T,H,B)=(78.81413pt, 637.34172pt, 78.81413pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=412.56496pt
+* \textheight=583.34172pt
+* \oddsidemargin=28.59503pt
+* \evensidemargin=28.59503pt
+* \topmargin=6.54414pt
+* \headheight=12.0pt
+* \headsep=16.0pt
+* \topskip=10.0pt
+* \footskip=26.0pt
+* \marginparwidth=96.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemargintrue
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 144.
+Package pgfplots notification 'compat/show suggested version=true': you might b
+enefit from \pgfplotsset{compat=1.18} (current compat level: 1.16).
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 14
+6.
+
+(/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+) (./total.tex
+<cactus/all.pdf, id=32, 505.89pt x 216.81pt>
+File: cactus/all.pdf Graphic file (type pdf)
+<use cactus/all.pdf>
+Package pdftex.def Info: cactus/all.pdf  used on input line 25.
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<cactus/all_scored.pdf, id=33, 505.89pt x 216.81pt>
+File: cactus/all_scored.pdf Graphic file (type pdf)
+<use cactus/all_scored.pdf>
+Package pdftex.def Info: cactus/all_scored.pdf  used on input line 32.
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [1
+
+{/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2 <./cactus/all.pdf> <./cactus/all_scored.pdf
+
+pdfTeX warning: pdflatex (file ./cactus/all_scored.pdf): PDF inclusion: multipl
+e pdfs with page group included in a single page
+>] (./scored.tex [3
+
+]
+<cactus/2024_cctsdb_yolo_2023.pdf, id=96, 505.89pt x 216.81pt>
+File: cactus/2024_cctsdb_yolo_2023.pdf Graphic file (type pdf)
+<use cactus/2024_cctsdb_yolo_2023.pdf>
+Package pdftex.def Info: cactus/2024_cctsdb_yolo_2023.pdf  used on input line 2
+4.
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+ [4
+
+ <./cactus/2024_cctsdb_yolo_2023.pdf>]
+<cactus/2024_collins_aerospace_benchmark.pdf, id=119, 505.89pt x 216.81pt>
+File: cactus/2024_collins_aerospace_benchmark.pdf Graphic file (type pdf)
+<use cactus/2024_collins_aerospace_benchmark.pdf>
+Package pdftex.def Info: cactus/2024_collins_aerospace_benchmark.pdf  used on i
+nput line 52.
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+ [5
+
+ <./cactus/2024_collins_aerospace_benchmark.pdf>]
+<cactus/2024_lsnc.pdf, id=141, 505.89pt x 216.81pt>
+File: cactus/2024_lsnc.pdf Graphic file (type pdf)
+<use cactus/2024_lsnc.pdf>
+Package pdftex.def Info: cactus/2024_lsnc.pdf  used on input line 80.
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+ [6
+
+ <./cactus/2024_lsnc.pdf>]
+<cactus/2024_ml4acopf_2023.pdf, id=163, 505.89pt x 216.81pt>
+File: cactus/2024_ml4acopf_2023.pdf Graphic file (type pdf)
+<use cactus/2024_ml4acopf_2023.pdf>
+Package pdftex.def Info: cactus/2024_ml4acopf_2023.pdf  used on input line 108.
+
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+ [7
+
+ <./cactus/2024_ml4acopf_2023.pdf>]
+<cactus/2024_ml4acopf_2024.pdf, id=187, 505.89pt x 216.81pt>
+File: cactus/2024_ml4acopf_2024.pdf Graphic file (type pdf)
+<use cactus/2024_ml4acopf_2024.pdf>
+Package pdftex.def Info: cactus/2024_ml4acopf_2024.pdf  used on input line 136.
+
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+ [8
+
+ <./cactus/2024_ml4acopf_2024.pdf>]
+<cactus/2024_traffic_signs_recognition_2023.pdf, id=209, 505.89pt x 216.81pt>
+File: cactus/2024_traffic_signs_recognition_2023.pdf Graphic file (type pdf)
+<use cactus/2024_traffic_signs_recognition_2023.pdf>
+Package pdftex.def Info: cactus/2024_traffic_signs_recognition_2023.pdf  used o
+n input line 165.
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+ [9
+
+ <./cactus/2024_traffic_signs_recognition_2023.pdf>]
+<cactus/2024_vggnet16_2023.pdf, id=231, 505.89pt x 216.81pt>
+File: cactus/2024_vggnet16_2023.pdf Graphic file (type pdf)
+<use cactus/2024_vggnet16_2023.pdf>
+Package pdftex.def Info: cactus/2024_vggnet16_2023.pdf  used on input line 195.
+
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+ [10
+
+ <./cactus/2024_vggnet16_2023.pdf>]
+<cactus/2024_vit_2023.pdf, id=253, 505.89pt x 216.81pt>
+File: cactus/2024_vit_2023.pdf Graphic file (type pdf)
+<use cactus/2024_vit_2023.pdf>
+Package pdftex.def Info: cactus/2024_vit_2023.pdf  used on input line 223.
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+
+[11
+
+ <./cactus/2024_vit_2023.pdf>]
+<cactus/2024_yolo_2023.pdf, id=275, 505.89pt x 216.81pt>
+File: cactus/2024_yolo_2023.pdf Graphic file (type pdf)
+<use cactus/2024_yolo_2023.pdf>
+Package pdftex.def Info: cactus/2024_yolo_2023.pdf  used on input line 251.
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+) [12
+
+ <./cactus/2024_yolo_2023.pdf>]
+(./unscored.tex [13
+
+]
+<cactus/2024_acasxu_2023.pdf, id=302, 505.89pt x 216.81pt>
+File: cactus/2024_acasxu_2023.pdf Graphic file (type pdf)
+<use cactus/2024_acasxu_2023.pdf>
+Package pdftex.def Info: cactus/2024_acasxu_2023.pdf  used on input line 30.
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+ [14
+
+ <./cactus/2024_acasxu_2023.pdf>]
+<cactus/2024_cgan_2023.pdf, id=325, 505.89pt x 216.81pt>
+File: cactus/2024_cgan_2023.pdf Graphic file (type pdf)
+<use cactus/2024_cgan_2023.pdf>
+Package pdftex.def Info: cactus/2024_cgan_2023.pdf  used on input line 62.
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+ [15
+
+ <./cactus/2024_cgan_2023.pdf>]
+<cactus/2024_cifar100.pdf, id=347, 505.89pt x 216.81pt>
+File: cactus/2024_cifar100.pdf Graphic file (type pdf)
+<use cactus/2024_cifar100.pdf>
+Package pdftex.def Info: cactus/2024_cifar100.pdf  used on input line 92.
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+ [16
+
+ <./cactus/2024_cifar100.pdf>]
+<cactus/2024_collins_rul_cnn_2023.pdf, id=369, 505.89pt x 216.81pt>
+File: cactus/2024_collins_rul_cnn_2023.pdf Graphic file (type pdf)
+<use cactus/2024_collins_rul_cnn_2023.pdf>
+Package pdftex.def Info: cactus/2024_collins_rul_cnn_2023.pdf  used on input li
+ne 125.
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+ [17
+
+ <./cactus/2024_collins_rul_cnn_2023.pdf>]
+<cactus/2024_cora.pdf, id=391, 505.89pt x 216.81pt>
+File: cactus/2024_cora.pdf Graphic file (type pdf)
+<use cactus/2024_cora.pdf>
+Package pdftex.def Info: cactus/2024_cora.pdf  used on input line 159.
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+ [18
+
+ <./cactus/2024_cora.pdf>]
+<cactus/2024_dist_shift_2023.pdf, id=413, 505.89pt x 216.81pt>
+File: cactus/2024_dist_shift_2023.pdf Graphic file (type pdf)
+<use cactus/2024_dist_shift_2023.pdf>
+Package pdftex.def Info: cactus/2024_dist_shift_2023.pdf  used on input line 19
+0.
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+ [19
+
+ <./cactus/2024_dist_shift_2023.pdf>]
+<cactus/2024_linearizenn.pdf, id=436, 505.89pt x 216.81pt>
+File: cactus/2024_linearizenn.pdf Graphic file (type pdf)
+<use cactus/2024_linearizenn.pdf>
+Package pdftex.def Info: cactus/2024_linearizenn.pdf  used on input line 220.
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+ [20
+
+ <./cactus/2024_linearizenn.pdf>]
+<cactus/2024_metaroom_2023.pdf, id=459, 505.89pt x 216.81pt>
+File: cactus/2024_metaroom_2023.pdf Graphic file (type pdf)
+<use cactus/2024_metaroom_2023.pdf>
+Package pdftex.def Info: cactus/2024_metaroom_2023.pdf  used on input line 252.
+
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+ [21
+
+ <./cactus/2024_metaroom_2023.pdf>]
+<cactus/2024_nn4sys_2023.pdf, id=481, 505.89pt x 216.81pt>
+File: cactus/2024_nn4sys_2023.pdf Graphic file (type pdf)
+<use cactus/2024_nn4sys_2023.pdf>
+Package pdftex.def Info: cactus/2024_nn4sys_2023.pdf  used on input line 283.
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+ [22
+
+ <./cactus/2024_nn4sys_2023.pdf>]
+<cactus/2024_safenlp.pdf, id=503, 505.89pt x 216.81pt>
+File: cactus/2024_safenlp.pdf Graphic file (type pdf)
+<use cactus/2024_safenlp.pdf>
+Package pdftex.def Info: cactus/2024_safenlp.pdf  used on input line 316.
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+ [23
+
+ <./cactus/2024_safenlp.pdf>]
+<cactus/2024_tinyimagenet.pdf, id=525, 505.89pt x 216.81pt>
+File: cactus/2024_tinyimagenet.pdf Graphic file (type pdf)
+<use cactus/2024_tinyimagenet.pdf>
+Package pdftex.def Info: cactus/2024_tinyimagenet.pdf  used on input line 348.
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+
+[24
+
+ <./cactus/2024_tinyimagenet.pdf>]
+<cactus/2024_tllverifybench_2023.pdf, id=547, 505.89pt x 216.81pt>
+File: cactus/2024_tllverifybench_2023.pdf Graphic file (type pdf)
+<use cactus/2024_tllverifybench_2023.pdf>
+Package pdftex.def Info: cactus/2024_tllverifybench_2023.pdf  used on input lin
+e 382.
+(pdftex.def)             Requested size: 412.56496pt x 176.81602pt.
+) [25
+
+ <./cactus/2024_tllverifybench_2023.pdf>] (./stats.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [26
+
+] [27] (./longtable.tex [28
+
+] [29] [30] [31] [32] [33] [34])
+
+AED: lastpage setting LastPage
+[35] (./main.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 9BCD9D7ECFE9A3B9574159505D4E22DF;567.
+ ) 
+Here is how much of TeX's memory you used:
+ 38011 strings out of 478276
+ 910133 string characters out of 5807083
+ 1413588 words of memory out of 5000000
+ 55506 multiletter control sequences out of 15000+600000
+ 478244 words of font info for 63 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 114i,11n,108p,722b,623s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+</cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/tex
+live/20210324-GCC-11.2.0/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/texl
+ive/20210324-GCC-11.2.0/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/texli
+ve/20210324-GCC-11.2.0/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></cv
+mfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/texlive
+/20210324-GCC-11.2.0/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></cvmf
+s/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/texlive/2
+0210324-GCC-11.2.0/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></cvmf
+s/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/texlive/2
+0210324-GCC-11.2.0/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></cvmfs
+/software.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/texlive/20
+210324-GCC-11.2.0/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></cvmfs/s
+oftware.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/texlive/2021
+0324-GCC-11.2.0/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></cvmfs/sof
+tware.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/texlive/202103
+24-GCC-11.2.0/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></cvmfs/softw
+are.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/texlive/20210324
+-GCC-11.2.0/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></cvmfs/softwar
+e.hpc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/texlive/20210324-G
+CC-11.2.0/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></cvmfs/software.h
+pc.rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/texlive/20210324-GCC-
+11.2.0/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></cvmfs/software.hpc.
+rwth.de/Linux/RH8/x86_64/intel/sapphirerapids/software/texlive/20210324-GCC-11.
+2.0/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></cvmfs/software.hpc.rwt
+h.de/Linux/RH8/x86_64/intel/sapphirerapids/software/texlive/20210324-GCC-11.2.0
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></cvmfs/software.hpc.rwth.
+de/Linux/RH8/x86_64/intel/sapphirerapids/software/texlive/20210324-GCC-11.2.0/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></cvmfs/software.hpc.rwth.de
+/Linux/RH8/x86_64/intel/sapphirerapids/software/texlive/20210324-GCC-11.2.0/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></cvmfs/software.hpc.rwth.de/
+Linux/RH8/x86_64/intel/sapphirerapids/software/texlive/20210324-GCC-11.2.0/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></cvmfs/software.hpc.rwth.de/Li
+nux/RH8/x86_64/intel/sapphirerapids/software/texlive/20210324-GCC-11.2.0/texmf-
+dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on main.pdf (35 pages, 499143 bytes).
+PDF statistics:
+ 723 PDF objects out of 1000 (max. 8388607)
+ 529 compressed objects within 6 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 168 words of extra memory for PDF output out of 10000 (max. 10000000)
+
