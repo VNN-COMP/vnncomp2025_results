@@ -1214,8 +1214,223 @@ def write_gnuplot_files(gnuplot_tool_cat_times, sorted_tools):
 
         f.write("\"\n\n")
 
+def process_single_tool_or_benchmark(csv_path):
+    """
+    Process results from a single tool's results.csv file or a specific benchmark's results.
+    
+    Args:
+        csv_path: Path to the results.csv file, can be either:
+                 - {tool}/results.csv (for all benchmarks of a tool)
+                 - {tool}/{benchmark}/results.csv (for a specific benchmark)
+    """
+    # Extract tool name and possibly benchmark name from path
+    path_parts = csv_path.split('/')
+    tool_name = path_parts[Settings.TOOL_LIST_GLOB_INDEX]
+    
+    # Determine if this is a specific benchmark or all benchmarks
+    is_benchmark_specific = len(path_parts) > Settings.TOOL_LIST_GLOB_INDEX + 2 and path_parts[-1] == "results.csv"
+    
+    if is_benchmark_specific:
+        benchmark_name = path_parts[Settings.TOOL_LIST_GLOB_INDEX + 1]
+        log_file_path = f"results_{tool_name}_{benchmark_name}.log"
+        print(f"Processing specific benchmark '{benchmark_name}' for tool '{tool_name}'")
+    else:
+        log_file_path = f"results_{tool_name}_all.log"
+        print(f"Processing all benchmarks for tool '{tool_name}'")
+    
+    # Open the log file
+    with open(log_file_path, 'w', encoding='utf-8') as log_file:
+        def log_print(*args, **kwargs):
+            # Print to console
+            print(*args, **kwargs)
+            # Print to log file
+            print(*args, file=log_file, **kwargs)
+            
+        if is_benchmark_specific:
+            log_print(f"\n===== Processing single benchmark result of a tool: {csv_path} =====\n")
+            log_print(f"Tool name: {tool_name}")
+            log_print(f"Benchmark name: {benchmark_name}")
+        else:
+            log_print(f"\n===== Processing single tool results: {csv_path} =====\n")
+            log_print(f"Tool name: {tool_name}")
+        
+        # Create a ToolResult object to process the CSV
+        cpu_benchmarks = []
+        skip_benchmarks = []
+        
+        # Process both scored and unscored categories
+        benchmark_results = {}
+        
+        for scored in [False, True]:
+            tr = ToolResult(scored, tool_name, csv_path, cpu_benchmarks, skip_benchmarks)
+            
+            # Group results by category
+            for cat, instances in tr.category_to_list.items():
+                if cat not in benchmark_results:
+                    benchmark_results[cat] = []
+                benchmark_results[cat].extend(instances)
+        
+        # Print results by category
+        log_print(f"\nResults for tool: {tool_name}")
+        log_print("=" * 80)
+        
+        total_holds = 0
+        total_violated = 0
+        total_timeout = 0
+        total_error = 0
+        total_unknown = 0
+        total_ce_correct = 0
+        total_ce_incorrect = 0
+        total_ce_missing = 0
+        
+        for cat in sorted(benchmark_results.keys()):
+            instances = benchmark_results[cat]
+            
+            category_holds = 0
+            category_violated = 0
+            category_timeout = 0
+            category_error = 0
+            category_unknown = 0
+            category_ce_correct = 0
+            category_ce_incorrect = 0
+            category_ce_missing = 0
+            
+            log_print(f"\nCategory: {cat} ({len(instances)} instances)")
+            log_print("-" * 80)
+            log_print(f"{'Instance':40} {'Result':10} {'Time (s)':10} {'CE Status':15}")
+            log_print("-" * 80)
+            
+            for row in instances:
+                network = Path(row[ToolResult.NETWORK]).stem
+                prop = Path(row[ToolResult.PROP]).stem
+                full_network_path = row[ToolResult.NETWORK]
+                instance = f"{network}-{prop}"
+                result = row[ToolResult.RESULT]
+                runtime = float(row[ToolResult.RUN_TIME])
+                
+                ce_status = ""
+                
+                # Check counterexample for "violated" (sat) results
+                if result == "violated":
+                    # Construct counterexample path
+                    if "safenlp" in full_network_path:
+                        if "medical" in full_network_path:
+                            ce_path = f"../{tool_name}/{cat}/medical_{network}_{prop}.counterexample.gz"
+                            net = f"medical/{network}"
+                            prop_name = f"medical/{prop}"
+                        else:
+                            # Assuming "ruarobot" as in the original code
+                            ce_path = f"../{tool_name}/{cat}/ruarobot_{network}_{prop}.counterexample.gz"
+                            net = f"ruarobot/{network}"
+                            prop_name = f"ruarobot/{prop}"
+                    else:
+                        ce_path = f"../{tool_name}/{cat}/{network}_{prop}.counterexample.gz"
+                        net = network
+                        prop_name = prop
+                    
+                    try:
+                        # Validate counterexample
+                        tup = ce_path, cat, net, prop_name
+                        res = is_correct_counterexample(*tup)
+                        
+                        # Check if the counterexample is valid
+                        if res == CounterexampleResult.CORRECT:
+                            ce_status = "VALID"
+                            category_ce_correct += 1
+                            total_ce_correct += 1
+                        elif res == CounterexampleResult.CORRECT_UP_TO_TOLERANCE:
+                            ce_status = "VALID (TOL)"
+                            category_ce_correct += 1
+                            total_ce_correct += 1
+                        else:
+                            ce_status = f"INVALID ({res})"
+                            log_print(f"  - CE Error: {res} for {instance}")
+                            category_ce_incorrect += 1
+                            total_ce_incorrect += 1
+                            
+                    except FileNotFoundError:
+                        ce_status = "MISSING"
+                        log_print(f"  - Missing CE: {ce_path} for {instance}")
+                        category_ce_missing += 1
+                        total_ce_missing += 1
+                    except Exception as e:
+                        ce_status = f"ERROR: {str(e)[:20]}"
+                        log_print(f"  - CE Error: {str(e)} for {instance}")
+                        category_ce_incorrect += 1
+                        total_ce_incorrect += 1
+                
+                log_print(f"{instance:40} {result:10} {runtime:10.2f} {ce_status:15}")
+                
+                # Update counters
+                if result == "holds":
+                    category_holds += 1
+                    total_holds += 1
+                elif result == "violated":
+                    category_violated += 1
+                    total_violated += 1
+                elif result == "timeout":
+                    category_timeout += 1
+                    total_timeout += 1
+                elif result == "error":
+                    category_error += 1
+                    total_error += 1
+                else:
+                    category_unknown += 1
+                    total_unknown += 1
+            
+            # Print category summary
+            log_print("-" * 80)
+            log_print(f"Category Summary: holds={category_holds}, violated={category_violated}, "
+                  f"timeout={category_timeout}, error={category_error}, unknown={category_unknown}")
+            if category_violated > 0:
+                log_print(f"Counterexample Summary: valid={category_ce_correct}, invalid={category_ce_incorrect}, "
+                      f"missing={category_ce_missing}")
+        
+        # Print overall summary
+        log_print("\n" + "=" * 80)
+        log_print(f"Overall Summary for {tool_name}:")
+        log_print(f"Total categories: {len(benchmark_results)}")
+        log_print(f"Total instances: {total_holds + total_violated + total_timeout + total_error + total_unknown}")
+        log_print(f"  - holds:   {total_holds}")
+        log_print(f"  - violated: {total_violated}")
+        log_print(f"  - timeout:  {total_timeout}")
+        log_print(f"  - error:    {total_error}")
+        log_print(f"  - unknown:  {total_unknown}")
+        if total_violated > 0:
+            log_print(f"Counterexample Summary:")
+            log_print(f"  - valid:   {total_ce_correct} ({total_ce_correct/total_violated*100:.1f}%)")
+            log_print(f"  - invalid: {total_ce_incorrect} ({total_ce_incorrect/total_violated*100:.1f}%)")
+            log_print(f"  - missing: {total_ce_missing} ({total_ce_missing/total_violated*100:.1f}%)")
+        log_print("=" * 80)
+        log_print(f"\nLog saved to: {log_file_path}")
+
 def main():
     """main entry point"""
+    import argparse
+
+    # Parse command-line arguments
+    parser = argparse.ArgumentParser(description='Process VNN-COMP results')
+    parser.add_argument('--single-tool', '-t', type=str, help='Process a single tool\'s results.csv file')
+    parser.add_argument('--single-benchmark', '-b', type=str, help='Process a results.csv file of a single benchmark of an specific tool')
+    args = parser.parse_args()
+
+    # If single tool mode is requested, process only that tool
+    if args.single_tool:
+        if Path(args.single_tool).exists():
+            process_single_tool_or_benchmark(args.single_tool)
+            return
+        else:
+            print(f"Error: Results file not found: {args.single_tool}")
+            sys.exit(1)
+    
+     # If single tool mode is requested, process only that tool
+    if args.single_benchmark:
+        if Path(args.single_benchmark).exists():
+            process_single_tool_or_benchmark(args.single_benchmark)
+            return
+        else:
+            print(f"Error: Results file not found: {args.single_benchmark}")
+            sys.exit(1)
 
     # use single overhead for all tools. False will have two different overheads for some tools depending
     # on if GPU needed to be initialized (manually entered)
