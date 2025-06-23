@@ -72,7 +72,7 @@ def is_correct_counterexample(ce_path, cat, net, prop):
     benchmark_repo = ""
 
     for key in Settings.BENCHMARK_REPOS:
-        if key != "2024":
+        if key != "2025":
             print("Skip ", key)
             continue
         print("ok", ce_path)

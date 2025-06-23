@@ -28,29 +28,34 @@ class Settings:
 
     # latex or plotting may break if there are no unscored benchmarks
     REGULAR_BENCHMARKS = [
-       "2024_safenlp",
-       "2024_nn4sys_2023",
-       "2024_cora",
-       "2024_linearizenn",
-       "2024_dist_shift_2023",
-       "2024_cifar100",
-       "2024_tinyimagenet",
-       "2024_acasxu_2023",
-       "2024_cgan_2023",
-       "2024_collins_rul_cnn_2023",
-       "2024_metaroom_2023",
-       "2024_tllverifybench_2023",
+       "2025_safenlp_2024",
+       "2025_nn4sys",
+       "2025_cora_2024",
+       "2025_linearizenn_2024",
+       "2025_dist_shift_2023",
+       "2025_cifar100_2024",
+       "2025_tinyimagenet_2024",
+       "2025_acas_xu",
+       "2025_cgan_2023",
+       "2025_collins_rul_cnn_2022",
+       "2025_metaroom_2023",
+       "2025_tllverifybench_2023",
+       "2025_cersyve",
+       "2025_malbeware",
+       "2025_sat_relu",
+       "2025_soundnessbench",
     ]
     EXTENDED_BENCHMARKS = [
-       "2024_ml4acopf_2023",
-       "2024_ml4acopf_2024",
-       "2024_collins_aerospace_benchmark",
-       "2024_lsnc",
-       "2024_yolo_2023",
-       "2024_cctsdb_yolo_2023",
-       "2024_traffic_signs_recognition_2023",
-       "2024_vggnet16_2023",
-       "2024_vit_2023",
+       "2025_ml4acopf_2023",
+       "2025_ml4acopf_2024",
+       "2025_collins_aerospace_benchmark",
+       "2025_lsnc_relu",
+       "2025_yolo_2023",
+       "2025_cctsdb_yolo_2023",
+       "2025_traffic_signs_recognition_2023",
+       "2025_vggnet16_2022",
+       "2025_vit_2023",
+       "2025_relusplitter",
     ]
     # Set UNSCORED_CATEGORIES to the set of benchmarks that should *not* be scored
     # So EXTENDED_BENCHMARKS for the regular track, and REGULAR_BENCHMARKS for the extended track
@@ -194,7 +199,7 @@ class Settings:
     
     base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
     BENCHMARK_REPOS = {
-        "2024": f"{base_dir}/vnncomp2024_benchmarks",
+        "2025": f"{base_dir}/vnncomp2025_benchmarks",
     }
     
 for r in Settings.BENCHMARK_REPOS.values():

@@ -124,8 +124,8 @@ class ToolResult:
                 # in 2023, year was prepended to category
                 year = ""
 
-                assert "2024" in network, f"year not found in network path: {network}"
-                year = "2024"
+                assert "2025" in network, f"year not found in network path: {network}"
+                year = "2025"
 
                 cat = year + "_" + cat
 
