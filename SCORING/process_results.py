@@ -1300,7 +1300,11 @@ def process_single_tool_or_benchmark(csv_path):
             log_print(f"{'Instance':40} {'Result':10} {'Time (s)':10} {'CE Status':15}")
             log_print("-" * 80)
             
-            for row in instances:
+            for instance_idx, row in enumerate(instances, 1):
+
+                # Add instance counter before each instance
+                log_print(f"--- INSTANCE {instance_idx}/{len(instances)} ---")
+                
                 network = Path(row[ToolResult.NETWORK]).stem
                 prop = Path(row[ToolResult.PROP]).stem
                 full_network_path = row[ToolResult.NETWORK]
