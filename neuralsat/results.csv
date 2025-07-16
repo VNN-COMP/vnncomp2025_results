@@ -78,6 +78,16 @@ cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/cifar10-point.onnx,
 cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/cifar10-trades.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/cifar10-img66.vnnlib,.006018847,sat,6.838524211
 cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/cifar10-set.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/cifar10-img66.vnnlib,.005887102,sat,6.806426685
 dist_shift_2023,vnncomp2025_benchmarks/benchmarks/dist_shift_2023/./onnx/mnist_concat.onnx,vnncomp2025_benchmarks/benchmarks/dist_shift_2023/./vnnlib/index7901_delta0.13.vnnlib,.005615546,unsat,26.935007834
+linearizenn_2024,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/onnx/AllInOne_10_10.onnx,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/vnnlib/prop_10_10.vnnlib,.005592733,sat,8.782579571
+linearizenn_2024,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/onnx/AllInOne_30_30.onnx,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/vnnlib/prop_30_30.vnnlib,.005645274,unsat,26.835698745
+linearizenn_2024,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/onnx/AllInOne_30_80.onnx,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/vnnlib/prop_30_80.vnnlib,.005643886,unsat,26.905547454
+linearizenn_2024,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/onnx/AllInOne_50_50.onnx,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/vnnlib/prop_50_50.vnnlib,.005714194,unsat,26.871054402
+linearizenn_2024,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/onnx/AllInOne_50_120.onnx,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/vnnlib/prop_50_120.vnnlib,.005706458,unsat,27.078716578
+linearizenn_2024,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/onnx/AllInOne_80_30.onnx,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/vnnlib/prop_80_30.vnnlib,.005638676,unsat,27.859696055
+linearizenn_2024,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/onnx/AllInOne_80_80.onnx,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/vnnlib/prop_80_80.vnnlib,.005793799,unsat,27.096491054
+linearizenn_2024,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/onnx/AllInOne_120_30.onnx,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/vnnlib/prop_120_30.vnnlib,.005748228,unsat,26.888713502
+linearizenn_2024,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/onnx/AllInOne_120_50.onnx,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/vnnlib/prop_120_50.vnnlib,.005645487,unsat,26.893348056
+linearizenn_2024,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/onnx/AllInOne_120_120.onnx,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/vnnlib/prop_120_120.vnnlib,.005458073,unsat,26.668471128
 test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_nano.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_nano.vnnlib,.008757336,unsat,20.128672116
 test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_tiny.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_tiny.vnnlib,.005874285,unsat,11.810017932
 test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_small.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_small.vnnlib,.005965465,unsat,11.813320196
