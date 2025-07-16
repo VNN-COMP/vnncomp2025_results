@@ -230,7 +230,7 @@ def get_ce_diff(onnx_filename, vnnlib_filename, ce_path, abs_tol, rel_tol):
             is_vio_zero_tolerance, _ = is_specification_vio(onnx_filename, vnnlib_filename, tuple(x_list), tuple(used_output), 0.0)
             if rel_error > 0 or not is_vio_zero_tolerance:
                 msg += "\nNote: counterexample is not within bounds, but within error tolerance and will be accepted"
-            rv = CounterexampleResult.CORRECT_UP_TO_TOLERANCE
+                rv = CounterexampleResult.CORRECT_UP_TO_TOLERANCE
         else:
             msg += "\nNote: counterexample in file did not violate the specification and so was invalid!"
             rv = CounterexampleResult.SPEC_NOT_VIOLATED
