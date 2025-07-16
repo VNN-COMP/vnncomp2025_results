@@ -1,0 +1,3 @@
+malbeware,vnncomp2025_benchmarks/benchmarks/malbeware/onnx/malware_malimg_family_scaled_linear-25.onnx,vnncomp2025_benchmarks/benchmarks/malbeware/vnnlib/malbeware_family-Obfuscator.AD_label-17_eps-1_idx-89.vnnlib,.005645258,unsat,16.324812392
+malbeware,vnncomp2025_benchmarks/benchmarks/malbeware/onnx/malware_malimg_family_scaled_4-25.onnx,vnncomp2025_benchmarks/benchmarks/malbeware/vnnlib/malbeware_family-Obfuscator.AD_label-17_eps-1_idx-89.vnnlib,.005680479,unsat,16.667493538
+malbeware,vnncomp2025_benchmarks/benchmarks/malbeware/onnx/malware_malimg_family_scaled_16-25.onnx,vnncomp2025_benchmarks/benchmarks/malbeware/vnnlib/malbeware_family-Obfuscator.AD_label-17_eps-1_idx-89.vnnlib,.005778330,unsat,16.739301793

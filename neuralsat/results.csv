@@ -88,6 +88,9 @@ linearizenn_2024,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/onnx/AllInOn
 linearizenn_2024,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/onnx/AllInOne_120_30.onnx,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/vnnlib/prop_120_30.vnnlib,.005748228,unsat,26.888713502
 linearizenn_2024,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/onnx/AllInOne_120_50.onnx,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/vnnlib/prop_120_50.vnnlib,.005645487,unsat,26.893348056
 linearizenn_2024,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/onnx/AllInOne_120_120.onnx,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/vnnlib/prop_120_120.vnnlib,.005458073,unsat,26.668471128
+malbeware,vnncomp2025_benchmarks/benchmarks/malbeware/onnx/malware_malimg_family_scaled_linear-25.onnx,vnncomp2025_benchmarks/benchmarks/malbeware/vnnlib/malbeware_family-Obfuscator.AD_label-17_eps-1_idx-89.vnnlib,.005645258,unsat,16.324812392
+malbeware,vnncomp2025_benchmarks/benchmarks/malbeware/onnx/malware_malimg_family_scaled_4-25.onnx,vnncomp2025_benchmarks/benchmarks/malbeware/vnnlib/malbeware_family-Obfuscator.AD_label-17_eps-1_idx-89.vnnlib,.005680479,unsat,16.667493538
+malbeware,vnncomp2025_benchmarks/benchmarks/malbeware/onnx/malware_malimg_family_scaled_16-25.onnx,vnncomp2025_benchmarks/benchmarks/malbeware/vnnlib/malbeware_family-Obfuscator.AD_label-17_eps-1_idx-89.vnnlib,.005778330,unsat,16.739301793
 test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_nano.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_nano.vnnlib,.008757336,unsat,20.128672116
 test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_tiny.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_tiny.vnnlib,.005874285,unsat,11.810017932
 test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_small.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_small.vnnlib,.005965465,unsat,11.813320196
