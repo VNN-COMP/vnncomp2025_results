@@ -185,3 +185,16 @@ acasxu_2023,vnncomp2025_benchmarks/benchmarks/acasxu_2023/onnx/ACASXU_run2a_2_9_
 acasxu_2023,vnncomp2025_benchmarks/benchmarks/acasxu_2023/onnx/ACASXU_run2a_3_3_batch_2000.onnx,vnncomp2025_benchmarks/benchmarks/acasxu_2023/vnnlib/prop_9.vnnlib,1.531920951,unknown,120.581854143
 acasxu_2023,vnncomp2025_benchmarks/benchmarks/acasxu_2023/onnx/ACASXU_run2a_4_5_batch_2000.onnx,vnncomp2025_benchmarks/benchmarks/acasxu_2023/vnnlib/prop_10.vnnlib,1.523027947,unknown,113.382000675
 acasxu_2023,vnncomp2025_benchmarks/benchmarks/test/onnx/test_nano.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_nano.vnnlib,1.514424707,unknown,1.534177102
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/lane_keep_pretrain_con.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_lane_keep.vnnlib,1.529341205,sat,2.192311081
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/lane_keep_pretrain_inv.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_lane_keep.vnnlib,1.534799861,sat,2.195508364
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/lane_keep_finetune_con.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_lane_keep.vnnlib,1.537814484,unknown,128.189789756
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/lane_keep_finetune_inv.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_lane_keep.vnnlib,1.542617210,run_instance_timeout,160.002467810
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/pendulum_pretrain_con.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_pendulum.vnnlib,1.512608352,sat,2.192740587
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/pendulum_pretrain_inv.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_pendulum.vnnlib,1.538454322,sat,2.227974348
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/pendulum_finetune_con.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_pendulum.vnnlib,1.532719463,unknown,119.371973288
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/pendulum_finetune_inv.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_pendulum.vnnlib,1.513941551,unknown,106.545513876
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/point_mass_pretrain_con.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_point_mass.vnnlib,1.515605413,sat,2.182942640
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/point_mass_pretrain_inv.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_point_mass.vnnlib,1.544122571,sat,2.225502843
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/point_mass_finetune_con.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_point_mass.vnnlib,1.531867100,unknown,159.343597180
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/point_mass_finetune_inv.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_point_mass.vnnlib,1.536082179,unknown,122.857700267
+cersyve,vnncomp2025_benchmarks/benchmarks/test/onnx/test_nano.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_nano.vnnlib,1.514717471,unknown,1.525805006
