@@ -91,8 +91,9 @@ linearizenn_2024,vnncomp2025_benchmarks/benchmarks/linearizenn_2024/onnx/AllInOn
 malbeware,vnncomp2025_benchmarks/benchmarks/malbeware/onnx/malware_malimg_family_scaled_linear-25.onnx,vnncomp2025_benchmarks/benchmarks/malbeware/vnnlib/malbeware_family-Obfuscator.AD_label-17_eps-1_idx-89.vnnlib,.005645258,unsat,16.324812392
 malbeware,vnncomp2025_benchmarks/benchmarks/malbeware/onnx/malware_malimg_family_scaled_4-25.onnx,vnncomp2025_benchmarks/benchmarks/malbeware/vnnlib/malbeware_family-Obfuscator.AD_label-17_eps-1_idx-89.vnnlib,.005680479,unsat,16.667493538
 malbeware,vnncomp2025_benchmarks/benchmarks/malbeware/onnx/malware_malimg_family_scaled_16-25.onnx,vnncomp2025_benchmarks/benchmarks/malbeware/vnnlib/malbeware_family-Obfuscator.AD_label-17_eps-1_idx-89.vnnlib,.005778330,unsat,16.739301793
-test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_nano.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_nano.vnnlib,.008757336,unsat,20.128672116
-test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_tiny.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_tiny.vnnlib,.005874285,unsat,11.810017932
-test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_small.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_small.vnnlib,.005965465,unsat,11.813320196
-test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_sat.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_prop.vnnlib,.005912521,sat,6.010248100
-test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_unsat.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_prop.vnnlib,.005889241,unsat,12.886458767
+test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_nano.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_nano.vnnlib,.009900628,unsat,19.064736141
+test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_tiny.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_tiny.vnnlib,.005812522,unsat,11.809805162
+test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_small.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_small.vnnlib,.006141963,unsat,11.852283742
+test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_sat.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_prop.vnnlib,.005893983,sat,5.963633977
+test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_unsat.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_prop.vnnlib,.005940265,unsat,12.919637336
+test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_nano.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_nano.vnnlib,.005888843,unsat,17.814074453
