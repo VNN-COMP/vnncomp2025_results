@@ -1,0 +1,13 @@
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/lane_keep_pretrain_con.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_lane_keep.vnnlib,20.473144774,sat,6.306032567
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/lane_keep_pretrain_inv.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_lane_keep.vnnlib,20.344438747,sat,6.244905809
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/lane_keep_finetune_con.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_lane_keep.vnnlib,20.369520288,unsat,7.600940224
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/lane_keep_finetune_inv.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_lane_keep.vnnlib,20.368735760,unsat,8.172823278
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/pendulum_pretrain_con.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_pendulum.vnnlib,20.359461579,sat,6.273673311
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/pendulum_pretrain_inv.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_pendulum.vnnlib,20.332500675,sat,6.287333062
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/pendulum_finetune_con.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_pendulum.vnnlib,20.353980758,unsat,7.185820138
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/pendulum_finetune_inv.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_pendulum.vnnlib,20.341149810,unsat,8.242243228
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/point_mass_pretrain_con.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_point_mass.vnnlib,20.366867883,sat,6.235326977
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/point_mass_pretrain_inv.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_point_mass.vnnlib,20.387894804,sat,6.231442770
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/point_mass_finetune_con.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_point_mass.vnnlib,20.385289409,unsat,7.314107708
+cersyve,vnncomp2025_benchmarks/benchmarks/cersyve/onnx/point_mass_finetune_inv.onnx,vnncomp2025_benchmarks/benchmarks/cersyve/vnnlib/prop_point_mass.vnnlib,20.375824343,unsat,8.411581184
+cersyve,vnncomp2025_benchmarks/benchmarks/test/onnx/test_nano.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_nano.vnnlib,20.326265432,unsat,6.226358155
