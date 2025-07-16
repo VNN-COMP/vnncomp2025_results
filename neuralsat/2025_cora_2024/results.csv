@@ -1,0 +1,9 @@
+cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/mnist-point.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/mnist-img0.vnnlib,.005705931,sat,6.714198093
+cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/mnist-trades.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/mnist-img0.vnnlib,.005748660,sat,6.710288760
+cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/mnist-set.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/mnist-img0.vnnlib,.005729777,unsat,9.264811719
+cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/svhn-point.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/svhn-img14.vnnlib,.005776458,sat,6.343046630
+cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/svhn-trades.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/svhn-img14.vnnlib,.005885232,sat,6.853722728
+cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/svhn-set.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/svhn-img14.vnnlib,.005776420,sat,6.846861129
+cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/cifar10-point.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/cifar10-img66.vnnlib,.005904365,sat,6.846565980
+cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/cifar10-trades.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/cifar10-img66.vnnlib,.006018847,sat,6.838524211
+cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/cifar10-set.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/cifar10-img66.vnnlib,.005887102,sat,6.806426685

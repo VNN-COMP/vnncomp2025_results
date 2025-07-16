@@ -68,6 +68,15 @@ cifar100_2024,vnncomp2025_benchmarks/benchmarks/cifar100_2024/onnx/CIFAR100_resn
 collins_rul_cnn_2022,vnncomp2025_benchmarks/benchmarks/collins_rul_cnn_2022/onnx/NN_rul_small_window_20.onnx,vnncomp2025_benchmarks/benchmarks/collins_rul_cnn_2022/vnnlib/robustness_2perturbations_delta5_epsilon10_w20.vnnlib,.005838381,sat,6.381383551
 collins_rul_cnn_2022,vnncomp2025_benchmarks/benchmarks/collins_rul_cnn_2022/onnx/NN_rul_full_window_20.onnx,vnncomp2025_benchmarks/benchmarks/collins_rul_cnn_2022/vnnlib/robustness_2perturbations_delta5_epsilon10_w20.vnnlib,.005984374,sat,6.349194871
 collins_rul_cnn_2022,vnncomp2025_benchmarks/benchmarks/collins_rul_cnn_2022/onnx/NN_rul_full_window_40.onnx,vnncomp2025_benchmarks/benchmarks/collins_rul_cnn_2022/vnnlib/robustness_2perturbations_delta5_epsilon10_w40.vnnlib,.005677309,unsat,12.467430009
+cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/mnist-point.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/mnist-img0.vnnlib,.005705931,sat,6.714198093
+cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/mnist-trades.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/mnist-img0.vnnlib,.005748660,sat,6.710288760
+cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/mnist-set.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/mnist-img0.vnnlib,.005729777,unsat,9.264811719
+cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/svhn-point.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/svhn-img14.vnnlib,.005776458,sat,6.343046630
+cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/svhn-trades.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/svhn-img14.vnnlib,.005885232,sat,6.853722728
+cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/svhn-set.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/svhn-img14.vnnlib,.005776420,sat,6.846861129
+cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/cifar10-point.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/cifar10-img66.vnnlib,.005904365,sat,6.846565980
+cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/cifar10-trades.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/cifar10-img66.vnnlib,.006018847,sat,6.838524211
+cora_2024,vnncomp2025_benchmarks/benchmarks/cora_2024/./onnx/cifar10-set.onnx,vnncomp2025_benchmarks/benchmarks/cora_2024/vnnlib/cifar10-img66.vnnlib,.005887102,sat,6.806426685
 test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_nano.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_nano.vnnlib,.008757336,unsat,20.128672116
 test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_tiny.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_tiny.vnnlib,.005874285,unsat,11.810017932
 test,vnncomp2025_benchmarks/benchmarks/test/onnx/test_small.onnx,vnncomp2025_benchmarks/benchmarks/test/vnnlib/test_small.vnnlib,.005965465,unsat,11.813320196
