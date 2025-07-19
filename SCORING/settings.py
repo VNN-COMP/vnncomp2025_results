@@ -35,7 +35,7 @@ class Settings:
        "2025_dist_shift_2023",
        "2025_cifar100_2024",
        "2025_tinyimagenet_2024",
-       "2025_acas_xu",
+       "2025_acasxu_2023",
        "2025_cgan_2023",
        "2025_collins_rul_cnn_2022",
        "2025_metaroom_2023",
@@ -80,6 +80,8 @@ class Settings:
             ('pyrat', 'PyRAT'),
             ('never2', 'NeVer2'),
             ('cora', 'CORA'),
+            ('rover', 'ROVER'),
+            ('sobolbox', 'SobolBox')
             ]
 
     TOOL_NAME_SUBS_LONGTABLE = [
@@ -92,6 +94,8 @@ class Settings:
             ('pyrat', 'PyRAT'),
             ('never2', 'NeVer2'),
             ('cora', 'CORA'),
+            ('rover', 'RVR'),
+            ('sobolbox', 'SB')
             ]
 
     TOOL_NAME_SUBS_GNUPLOT = [
@@ -101,17 +105,20 @@ class Settings:
             ('nnenum', 'nnenum'),
             ('nnv', 'NNV'),
             ('pyrat', 'PyRAT'),
+            ('rover', 'ROVER'),
+            ('sobolbox', 'SobolBox')
         ]
 
     CAT_NAME_SUBS_LATEX = [
         ('carvana_unet_2022', 'Carvana 2022'),
         ('cifar100_tinyimagenet_resnet', 'Cifar100 Tiny'),
-        ('reach_prob_density', 'Reach Prob Den~')
+        ('reach_prob_density', 'Reach Prob Den~'),
+        ('sat_relu', 'sat relu')
         ]
 
-    SKIP_TOOLS = [] #['marabou', 'verapak', 'cgdtest']
+    SKIP_TOOLS = ['rover'] #['marabou', 'verapak', 'cgdtest']
 
-    SKIP_BENCHMARK_TUPLES = [] #[('marabou', 'sri_resnet_a'), ('marabou', 'sri_resnet_b')]
+    SKIP_BENCHMARK_TUPLES = [('alpha_beta_crown', '2025_test'), ('neuralsat', '2025_test'), ('cora', '2025_test')] #[('marabou', 'sri_resnet_a'), ('marabou', 'sri_resnet_b')]
 
     PLOTS_DIR = "./plots"
 
@@ -142,29 +149,36 @@ class Settings:
     gnuplot_data = (
         GnuplotSettings('all', 'All Instances'),
         GnuplotSettings('all_scored', 'All Scored Instances'),
-        GnuplotSettings("2024_acasxu_2023", "acasxu 2023"),
-        GnuplotSettings("2024_cctsdb_yolo_2023", "cctsdb yolo 2023"),
-        GnuplotSettings("2024_cgan_2023", "cgan 2023"),
-        GnuplotSettings("2024_cifar100", "cifar100"),
+        GnuplotSettings("2025_acasxu_2023", "acasxu 2023"),
+        GnuplotSettings("2025_cctsdb_yolo_2023", "cctsdb yolo 2023"),
+        GnuplotSettings("2025_cgan_2023", "cgan 2023"),
+        GnuplotSettings("2025_cifar100_2024", "cifar100 2024"),
 
-        GnuplotSettings("2024_collins_aerospace_benchmark", "collins aerospace benchmark"),
-        GnuplotSettings("2024_collins_rul_cnn_2023", "collins rul cnn 2023"),
-        GnuplotSettings("2024_cora", "cora"),
-        GnuplotSettings("2024_dist_shift_2023", "dist shift 2023"),
-        GnuplotSettings("2024_linearizenn", "linearizenn"),
-        GnuplotSettings("2024_lsnc", "lsnc"),
-        GnuplotSettings("2024_metaroom_2023", "metaroom 2023"),
-        GnuplotSettings("2024_ml4acopf_2023", "ml4acopf 2023"),
-        GnuplotSettings("2024_ml4acopf_2024", "ml4acopf 2024"),
-        GnuplotSettings("2024_nn4sys_2023", "nn4sys 2023"),
-        GnuplotSettings("2024_safenlp", "safenlp"),
-        # GnuplotSetting  "2024_test", s("test"),
-        GnuplotSettings("2024_tinyimagenet", "tinyimagenet"),
-        GnuplotSettings("2024_tllverifybench_2023", "tllverifybench 2023"),
-        GnuplotSettings("2024_traffic_signs_recognition_2023", "traffic signs recognition 2023"),
-        GnuplotSettings("2024_vggnet16_2023", "vggnet16 2023"),
-        GnuplotSettings("2024_vit_2023", "vit 2023"),
-        GnuplotSettings("2024_yolo_2023", "yolo 2023"),
+        GnuplotSettings("2025_collins_aerospace_benchmark", "collins aerospace benchmark"),
+        GnuplotSettings("2025_collins_rul_cnn_2022", "collins rul cnn 2022"),
+        GnuplotSettings("2025_cora_2024", "cora 2024"),
+        GnuplotSettings("2025_dist_shift_2023", "dist shift 2023"),
+        GnuplotSettings("2025_linearizenn_2024", "linearizenn 2024"),
+        # GnuplotSettings("2025_lsnc", "lsnc"),
+        GnuplotSettings("2025_metaroom_2023", "metaroom 2023"),
+        # GnuplotSettings("2025_ml4acopf_2023", "ml4acopf 2023"),
+        GnuplotSettings("2025_ml4acopf_2024", "ml4acopf 2024"),
+        GnuplotSettings("2025_nn4sys", "nn4sys 2023"),
+        GnuplotSettings("2025_safenlp_2024", "safenlp"),
+        # GnuplotSetting  "2025_test", s("test"),
+        GnuplotSettings("2025_tinyimagenet_2024", "tinyimagenet"),
+        GnuplotSettings("2025_tllverifybench_2023", "tllverifybench 2023"),
+        GnuplotSettings("2025_traffic_signs_recognition_2023", "traffic signs recognition 2023"),
+        GnuplotSettings("2025_vggnet16_2022", "vggnet16 2022"),
+        GnuplotSettings("2025_vit_2023", "vit 2023"),
+        GnuplotSettings("2025_yolo_2023", "yolo 2023"),
+        GnuplotSettings("2025_cersyve", 'cersyve'),
+        GnuplotSettings("2025_malbeware", 'malbeware'),
+        GnuplotSettings("2025_sat_relu", 'sat relu'),
+        GnuplotSettings("2025_soundnessbench", 'soundnessbench'),
+        GnuplotSettings("2025_lsnc_relu", 'lsnc relu'),
+        GnuplotSettings("2025_relusplitter", 'relusplitter'),
+        
 
         #2022_carvana_unet_2022 2022_cifar100_tinyimagenet_resnet 2022_cifar2020 2022_cifar_biasfield 2022_mnist_fc 2022_nn4sys 2022_oval21 2022_reach_prob_density 2022_rl_benchmarks 2022_sri_resnet_a 2022_sri_resnet_b 2022_tllverifybench 2022_vggnet16_2022 2023_acasxu 2023_cctsdb_yolo 2023_cgan 2023_collins_rul_cnn 2023_collins_yolo_robustness 2023_dist_shift 2023_metaroom 2023_ml4acopf 2023_nn4sys 2023_test 2023_tllverifybench 2023_traffic_signs_recognition 2023_vggnet16 2023_vit 2023_yolo
 #        GnuplotSettings('2022_carvana_unet_2022', 'Carvana Unet 2022'),

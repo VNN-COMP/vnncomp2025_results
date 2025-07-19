@@ -5,6 +5,7 @@ code related to checking for counterexamples
 from pathlib import Path
 import gzip
 import datetime
+import sys
 
 import numpy as np
 import onnx
@@ -62,6 +63,7 @@ class CounterexampleResult:
     NO_CE = "no_ce"
     EXEC_DOESNT_MATCH = "exec_doesnt_match"
     SPEC_NOT_VIOLATED = "spec_not_violated"
+    WRONG_SHAPE = 'wrong_shape'
 
 def is_correct_counterexample(ce_path, cat, net, prop):
     """is the counterexample correct? returns an element of CounterexampleResult 
@@ -179,7 +181,13 @@ def get_ce_diff(onnx_filename, vnnlib_filename, ce_path, abs_tol, rel_tol):
 
     x_in = np.array(x_list, dtype=input_dtype)
     flatten_order = 'C'
-    x_in = x_in.reshape(input_shape, order=flatten_order)
+    # Only reshape if the total size matches
+    if x_in.size == np.prod(input_shape):
+        x_in = x_in.reshape(input_shape, order=flatten_order)
+    else:
+        with open('./cex_wrong_shape.csv', 'a') as f:
+            f.write(f'{ce_path},{x_in.shape},{input_shape}\n')
+        return CounterexampleResult.WRONG_SHAPE, f"Cannot reshape input of size {x_in.size} to shape {input_shape}"
     output = predict_with_onnxruntime(onnx_model, x_in)
 
     flat_out = output.flatten(flatten_order)

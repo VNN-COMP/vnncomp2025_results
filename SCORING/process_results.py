@@ -519,7 +519,7 @@ def compare_results(all_tool_names, gnuplot_tool_cat_times, result_list, single_
 
             cat_str = cat.replace('_', '-')
 
-            print_table_header(f, f"Benchmark \\texttt{{{cat_str}}}", "tab:cat_{cat}",
+            print_table_header(f, f"Benchmark \\texttt{{{cat_str}}}", f"tab:cat_{cat}",
                                ("\\# ~", "Tool", "Verified", "Falsified", "Fastest", "Penalty", "Points", "Score", "Solved"),
                                align='llllllrrr')
 
