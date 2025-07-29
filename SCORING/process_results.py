@@ -371,6 +371,10 @@ def compare_results(all_tool_names, gnuplot_tool_cat_times, result_list, single_
                 else:
                     true_result = 'unsat'
 
+                # if times_holds and times_violated and np.all([x == CounterexampleResult.CORRECT_UP_TO_TOLERANCE for x in correct_violations.values()]):
+                #     with open('conflicting.csv', 'a') as f:
+                #         f.write(f"{cat},{index},{prop},{true_result},{tools_holds}, {tools_violated}," + \
+                #                 f"{','.join([f'{t}={c}' for t, c in correct_violations.items()])}\n")
             print(f"Row: {table_row}")
             print(f"True Result: {true_result}")
 
