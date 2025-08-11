@@ -1,0 +1,171 @@
+% TikZ plot for 2025_cgan_2023
+% Generated automatically with embedded data
+% Requires: \usepackage{pgfplots} \pgfplotsset{compat=1.18}
+
+\begin{tikzpicture}
+\begin{semilogyaxis}[
+    xlabel={Number of Instances Verified},
+    ylabel={Time (sec)},
+    legend pos=outer north east,
+    grid=major,
+    width=10cm,
+    height=6.5cm,
+    ymin=1.412,
+    ymax=374.3,
+    xmin=0,
+    xmax=23,
+    line width=1.5pt,
+    legend style={font=\footnotesize, cells={anchor=west}, draw=none},
+    xlabel style={font=\small},
+    ylabel style={font=\small},
+    title={Cgan 2023},
+    title style={font=\normalsize}
+]
+
+\addplot[color=red, mark=none, solid] coordinates {
+    (1,6.377341)
+    (2,6.390990)
+    (3,6.393688)
+    (4,6.396725)
+    (5,6.397256)
+    (6,6.427801)
+    (7,6.479960)
+    (8,6.489764)
+    (9,6.561776)
+    (10,7.065711)
+    (11,7.938304)
+    (12,7.986032)
+    (13,8.397642)
+    (14,8.399444)
+    (15,8.659061)
+    (16,8.677209)
+    (17,8.914986)
+    (18,9.445879)
+    (19,11.548100)
+    (20,11.742181)
+    (21,14.877687)
+};
+\addlegendentry{$\alpha$-$\beta$-CROWN}
+
+\addplot[color=green, mark=none, dotted] coordinates {
+    (1,6.157111)
+    (2,6.172989)
+    (3,6.199763)
+    (4,6.233535)
+    (5,6.254104)
+    (6,6.270470)
+    (7,6.302879)
+    (8,6.341383)
+    (9,6.661634)
+    (10,7.335148)
+    (11,14.717399)
+    (12,15.550518)
+    (13,27.820725)
+    (14,28.000314)
+    (15,28.290421)
+    (16,28.406769)
+    (17,29.464082)
+    (18,32.858561)
+    (19,33.072791)
+    (20,137.643881)
+    (21,141.230964)
+};
+\addlegendentry{neuralsat}
+
+\addplot[color=orange, mark=none, dashdotted] coordinates {
+    (1,1.764807)
+    (2,1.786999)
+    (3,10.541704)
+    (4,10.632971)
+    (5,12.125163)
+    (6,14.254855)
+    (7,17.570583)
+    (8,17.662182)
+    (9,18.629705)
+    (10,19.294736)
+    (11,22.484219)
+    (12,24.001359)
+    (13,31.112494)
+    (14,51.810793)
+    (15,66.827543)
+    (16,80.999535)
+    (17,220.590311)
+};
+\addlegendentry{nnenum}
+
+\addplot[color=purple, mark=none, densely dashed] coordinates {
+    (1,17.993396)
+    (2,18.052964)
+    (3,18.206692)
+    (4,18.503826)
+    (5,18.557144)
+    (6,18.610479)
+    (7,18.688576)
+    (8,18.726452)
+    (9,18.893468)
+    (10,22.319585)
+    (11,23.521091)
+    (12,26.263745)
+    (13,45.069305)
+    (14,77.549065)
+    (15,78.199511)
+    (16,249.562875)
+};
+\addlegendentry{nnv}
+
+\addplot[color=brown, mark=none, loosely dashed] coordinates {
+    (1,8.604131)
+    (2,8.620611)
+    (3,8.637872)
+    (4,8.648003)
+    (5,8.670059)
+    (6,8.678968)
+    (7,8.689423)
+    (8,8.692625)
+    (9,8.699008)
+    (10,9.611907)
+    (11,9.615992)
+    (12,9.630572)
+    (13,9.667218)
+    (14,9.720523)
+    (15,9.943531)
+    (16,10.074787)
+    (17,10.797963)
+    (18,11.681234)
+    (19,12.025775)
+    (20,14.489828)
+    (21,15.299280)
+};
+\addlegendentry{pyrat}
+
+\addplot[color=cyan, mark=none, loosely dotted] coordinates {
+    (1,5.678752)
+    (2,5.978441)
+    (3,6.052887)
+    (4,6.259759)
+    (5,6.460086)
+    (6,6.471551)
+    (7,6.484661)
+    (8,6.493145)
+    (9,6.504680)
+    (10,6.587623)
+    (11,7.246885)
+    (12,7.850970)
+    (13,7.853237)
+    (14,7.903934)
+    (15,8.523561)
+    (16,8.623647)
+    (17,8.623967)
+    (18,8.709720)
+    (19,8.933112)
+};
+\addlegendentry{sobolbox}
+
+% Timeout line
+\addplot[color=gray, dashed, mark=none, domain=0:23] {60};
+
+% Add timeout label as text below the line
+\node[color=gray] at (axis cs:3,54.0) {One Minute};
+
+\end{semilogyaxis}
+\end{tikzpicture}
