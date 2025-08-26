@@ -235,9 +235,8 @@ def get_ce_diff(onnx_filename, vnnlib_filename, ce_path, abs_tol, rel_tol):
             # If the example is only valid because it's within the defined error tolerance,
             # this tool will not receive a penalty, but other tools may still correctly
             # prove UNSAT
-            is_vio_zero_tolerance, _ = is_specification_vio(onnx_filename, vnnlib_filename, tuple(x_list), tuple(used_output), 1e-7)
-            if rel_error > 1e-5 or not is_vio_zero_tolerance:
-            # is_vio_zero_tolerance, _ = is_specification_vio(onnx_filename, vnnlib_filename, tuple(x_list), tuple(used_output), 0.0)
+            is_vio_small_tolerance, _ = is_specification_vio(onnx_filename, vnnlib_filename, tuple(x_list), tuple(used_output), 1e-7)
+            if rel_error > 1e-6 or not is_vio_small_tolerance:
             # if rel_error > 0 or not is_vio_zero_tolerance:
                 msg += "\nNote: counterexample is not within bounds, but within error tolerance and will be accepted"
                 rv = CounterexampleResult.CORRECT_UP_TO_TOLERANCE
