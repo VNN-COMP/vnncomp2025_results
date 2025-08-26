@@ -1,0 +1,118 @@
+% TikZ plot for 2025_cctsdb_yolo_2023
+% Generated automatically with embedded data
+% Requires: \usepackage{pgfplots} \pgfplotsset{compat=1.18}
+
+\begin{tikzpicture}
+\begin{semilogyaxis}[
+    xlabel={Number of Instances Verified},
+    ylabel={Time (sec)},
+    legend pos=outer north east,
+    grid=major,
+    width=10cm,
+    height=6.5cm,
+    ymin=5.527,
+    ymax=128.7,
+    xmin=0,
+    xmax=43,
+    line width=1.5pt,
+    legend style={font=\footnotesize, cells={anchor=west}, draw=none},
+    xlabel style={font=\small},
+    ylabel style={font=\small},
+    title={Cctsdb Yolo 2023},
+    title style={font=\normalsize}
+]
+
+\addplot[color=red, mark=none, solid] coordinates {
+    (1,6.908636)
+    (2,6.925055)
+    (3,6.926328)
+    (4,6.926613)
+    (5,6.929643)
+    (6,6.937527)
+    (7,6.937662)
+    (8,6.937722)
+    (9,6.939939)
+    (10,6.941658)
+    (11,6.945072)
+    (12,6.945080)
+    (13,6.945727)
+    (14,6.952889)
+    (15,6.954428)
+    (16,6.955034)
+    (17,6.959097)
+    (18,6.960894)
+    (19,6.962190)
+    (20,6.963184)
+    (21,6.966851)
+    (22,6.971113)
+    (23,6.971130)
+    (24,6.972838)
+    (25,6.972916)
+    (26,6.973858)
+    (27,6.983460)
+    (28,6.988328)
+    (29,6.990841)
+    (30,6.991376)
+    (31,6.997513)
+    (32,7.000186)
+    (33,7.003230)
+    (34,7.004616)
+    (35,7.011847)
+    (36,7.017371)
+    (37,7.025154)
+    (38,7.025583)
+    (39,7.139887)
+};
+\addlegendentry{$\alpha$-$\beta$-CROWN}
+
+\addplot[color=brown, mark=none, loosely dashed] coordinates {
+    (1,7.426083)
+    (2,13.698303)
+    (3,17.301870)
+    (4,17.452358)
+    (5,17.527044)
+    (6,19.894909)
+    (7,19.953380)
+    (8,20.049877)
+    (9,27.468925)
+    (10,28.823512)
+    (11,30.117136)
+    (12,32.497733)
+    (13,33.743315)
+    (14,35.120308)
+    (15,36.441421)
+    (16,37.486679)
+    (17,37.509146)
+    (18,37.585440)
+    (19,37.658967)
+    (20,38.844936)
+    (21,40.127633)
+    (22,42.703081)
+    (23,47.558820)
+    (24,52.484505)
+    (25,53.981476)
+    (26,54.059684)
+    (27,55.374011)
+    (28,62.687116)
+    (29,84.502656)
+    (30,84.614751)
+    (31,84.733540)
+    (32,85.148302)
+    (33,85.382424)
+    (34,85.404145)
+    (35,85.558938)
+    (36,85.689020)
+    (37,85.738828)
+    (38,85.746821)
+    (39,85.791166)
+};
+\addlegendentry{pyrat}
+
+% Timeout line
+\addplot[color=gray, dashed, mark=none, domain=0:43] {60};
+
+% Add timeout label as text below the line
+\node[color=gray] at (axis cs:6,54.0) {One Minute};
+
+\end{semilogyaxis}
+\end{tikzpicture}
